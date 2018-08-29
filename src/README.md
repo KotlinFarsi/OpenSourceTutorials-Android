@@ -26,4 +26,5 @@
 
 [۳.۱ ) ساختن پروژه در اندروید استودیو](https://github.com/sinadarvi/kotlin-for-android-developers-fa/blob/master/src/creating-the-project-in-android-studio)
 
+۳.۲ ) تنظیمات گردل
 <بقیه فصل ها در حال ترجمه است>
