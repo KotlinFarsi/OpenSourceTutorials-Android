@@ -28,4 +28,6 @@
 
 [۳.۲ ) تنظیمات گردل](https://github.com/KotlinFarsi/OpenSourceTutorials-Android/blob/master/src/configure-gradle)
 
+[۳.۳ ) تبدیل MainActivity به کد کاتلین](https://github.com/KotlinFarsi/OpenSourceTutorials-Android/blob/master/src/convert-mainactivity-to-kotlin-code)
+
 <بقیه فصل ها در حال ترجمه است>
