@@ -38,6 +38,10 @@
 
 [4.2 ) ارث بری](./classes-and-functions/README.md)
 
+[4.3 ) توابع](./classes-and-functions/README.md)
+
+[4.4 ) کانستراکتور و پارامترها](./classes-and-functions/README.md)
+
 
 
 <بقیه فصل ها در حال ترجمه است>
