@@ -32,4 +32,10 @@
 
 [3.4 ) تست کارکردن همه اجزا](./test-that-every-thing-works/README.md)
 
+**[4 - کلاس ها و توابع](./classes-and-functions/README.md)**
+
+[4.1 ) روش تعریف کلاس](./how-to-declare-a-class/README.md)
+
+
+
 <بقیه فصل ها در حال ترجمه است>
