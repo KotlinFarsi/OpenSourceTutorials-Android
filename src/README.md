@@ -34,13 +34,13 @@
 
 **[4 - کلاس ها و توابع](./classes-and-functions/README.md)**
 
-[4.1 ) روش تعریف کلاس](./classes-and-functions/README.md)
+[4.1 ) روش تعریف کلاس](./classes-and-functions/README.md#روش-تعریف-کلاس)
 
-[4.2 ) ارث بری](./classes-and-functions/README.md)
+[4.2 ) ارث بری](./classes-and-functions/README.md#ارث-بری)
 
-[4.3 ) توابع](./classes-and-functions/README.md)
+[4.3 ) توابع](./classes-and-functions/README.md#توابع)
 
-[4.4 ) کانستراکتور و پارامترها](./classes-and-functions/README.md)
+[4.4 ) کانستراکتور و پارامترها](./classes-and-functions/README.md#کانستراکتور-و-پارامترها)
 
 
 
