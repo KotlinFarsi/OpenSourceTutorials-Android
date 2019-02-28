@@ -24,13 +24,13 @@
 
 **[3 - ساختن یک پروژه جدید](./creating-a-new-project/README.md)**
 
-[3.1 ) ساختن پروژه در اندروید استودیو](./creating-the-project-in-android-studio/README.md)
+[3.1 ) ساختن پروژه در اندروید استودیو](./creating-a-new-project/README.md)
 
-[3.2 ) تنظیمات گردل](./configure-gradle/README.md)
+[3.2 ) تنظیمات گردل](./creating-a-new-project/README.md)
 
-[3.3 ) تبدیل MainActivity به کد کاتلین](./convert-mainactivity-to-kotlin-code/README.md)
+[3.3 ) تبدیل MainActivity به کد کاتلین](./creating-a-new-project/README.md)
 
-[3.4 ) تست کارکردن همه اجزا](./test-that-every-thing-works/README.md)
+[3.4 ) تست کارکردن همه اجزا](./creating-a-new-project/README.md)
 
 **[4 - کلاس ها و توابع](./classes-and-functions/README.md)**
 
