@@ -36,6 +36,8 @@
 
 [4.1 ) روش تعریف کلاس](./how-to-declare-a-class/README.md)
 
+[4.2 ) ارث بری](./class-inheritance/README.md)
+
 
 
 <بقیه فصل ها در حال ترجمه است>
