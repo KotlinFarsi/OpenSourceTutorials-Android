@@ -12,7 +12,7 @@
 
 **[1 - معرفی](./introduction/README.md)**
 
-[1.1 )‌ کاتلین چیست؟](.introduction/README.md#کاتلین-چیست)
+[1.1 )‌ کاتلین چیست؟](./introduction/README.md#کاتلین-چیست)
 
 [1.2 ) با کاتلین به چه میرسیم؟](./introduction/README.md#با-کاتلین-به-چه-میرسیم)
 
