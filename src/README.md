@@ -30,6 +30,6 @@
 
 [3.3 ) تبدیل MainActivity به کد کاتلین](./convert-mainactivity-to-kotlin-code/README.md)
 
-[3.4 ) تبدیل MainActivity به کد کاتلین](./test-that-every-thing-works/README.md)
+[3.4 ) تست کارکردن همه اجزا](./test-that-every-thing-works/README.md)
 
 <بقیه فصل ها در حال ترجمه است>
