@@ -18,9 +18,9 @@
 
 **[2 - آماده شدن](./getting-ready/README.md)**
 
-[2.1 ) اندروید استودیو](./android-studio/README.md)
+[2.1 ) اندروید استودیو](./getting-ready/README.md#اندروید-استودیو)
 
-[2.2 ) نصب پلاگین کاتلین](./install-kotlin-plugin/README.md)
+[2.2 ) نصب پلاگین کاتلین](./getting-ready/README.md#نصب-پلاگین-کاتلین)
 
 **[3 - ساختن یک پروژه جدید](./creating-a-new-project/README.md)**
 
