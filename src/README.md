@@ -14,7 +14,7 @@
 
 [1.1 )‌ کاتلین چیست؟](./introduction/README.md#کاتلین-چیست)
 
-[1.2 ) با کاتلین به چه میرسیم؟](/src/introduction/README.md#با-کاتلین-به-چه-میرسیم)
+[1.2 ) با کاتلین به چه میرسیم؟](./introduction/README.md#با-کاتلین-به-چه-میرسیم)
 
 **[2 - آماده شدن](./getting-ready/README.md)**
 
