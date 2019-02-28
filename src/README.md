@@ -10,24 +10,24 @@
 
 ت ) چند سخن مترجم
 
-[۱ ) معرفی](https://github.com/KotlinFarsi/OpenSourceTutorials-Android/blob/master/src/introduction)
+**[۱ - معرفی](./introduction/README.md)**
 
-[۱.۱ )‌ کاتلین چیست؟](https://github.com/KotlinFarsi/OpenSourceTutorials-Android/blob/master/src/what-is-kotlin)
+[۱.۱ )‌ کاتلین چیست؟](./what-is-kotlin/README.md)
 
-[۱.۲ ) با کاتلین به چه میرسیم؟](https://github.com/KotlinFarsi/OpenSourceTutorials-Android/blob/master/src/what-do-we-get-with-kotlin)
+[۱.۲ ) با کاتلین به چه میرسیم؟](./what-do-we-get-with-kotlin/README.md)
 
-[۲ )‌ آماده شدن](https://github.com/KotlinFarsi/OpenSourceTutorials-Android/blob/master/src/getting-ready)
+**[۲ - آماده شدن](./getting-ready/README.md)**
 
-[۲.۱ ) اندروید استودیو](https://github.com/KotlinFarsi/OpenSourceTutorials-Android/blob/master/src/android-studio)
+[۲.۱ ) اندروید استودیو](./android-studio/README.md)
 
-[۲.۲ ) نصب پلاگین کاتلین](https://github.com/KotlinFarsi/OpenSourceTutorials-Android/blob/master/src/install-kotlin-plugin)
+[۲.۲ ) نصب پلاگین کاتلین](./install-kotlin-plugin/README.md)
 
-[۳ ) ساختن یک پروژه جدید](https://github.com/KotlinFarsi/OpenSourceTutorials-Android/blob/master/src/creating-a-new-project)
+**[۳ - ساختن یک پروژه جدید](./creating-a-new-project/README.md)**
 
-[۳.۱ ) ساختن پروژه در اندروید استودیو](https://github.com/KotlinFarsi/OpenSourceTutorials-Android/blob/master/src/creating-the-project-in-android-studio)
+[۳.۱ ) ساختن پروژه در اندروید استودیو](./creating-the-project-in-android-studio/README.md)
 
-[۳.۲ ) تنظیمات گردل](https://github.com/KotlinFarsi/OpenSourceTutorials-Android/blob/master/src/configure-gradle)
+[۳.۲ ) تنظیمات گردل](./configure-gradle/README.md)
 
-[۳.۳ ) تبدیل MainActivity به کد کاتلین](https://github.com/KotlinFarsi/OpenSourceTutorials-Android/blob/master/src/convert-mainactivity-to-kotlin-code)
+[۳.۳ ) تبدیل MainActivity به کد کاتلین](./convert-mainactivity-to-kotlin-code/README.md)
 
 <بقیه فصل ها در حال ترجمه است>
