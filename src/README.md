@@ -44,6 +44,10 @@
 
 **[5 - نوشتن اولین کلاس](./writing-your-first-class/README.md)**
 
+[5.1 ) ساختن layout](./writing-your-first-class/README.md#ساختن-layout)
+
+[5.2 ) آداپتور Recycler](./writing-your-first-class/README.md#آداپتور-recycler)
+
 
 
 
