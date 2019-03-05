@@ -48,6 +48,12 @@
 
 [5.2 ) آداپتور Recycler](./writing-your-first-class/README.md#آداپتور-recycler)
 
+**[6 - مقادیر و خصیصه ها](./variables-and-properties/README.md)**
+
+[4.1 ) type های اولیه](./classes-and-functions/README.md#روش-تعریف-کلاس)
+
+[4.1 ) خصیصه ها](./classes-and-functions/README.md#روش-تعریف-کلاس)
+
 
 
 
