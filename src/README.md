@@ -50,9 +50,11 @@
 
 **[6 - مقادیر و خصیصه ها](./variables-and-properties/README.md)**
 
-[4.1 ) type های اولیه](./classes-and-functions/README.md#روش-تعریف-کلاس)
+[6.1 ) type های پایه ای](./variables-and-properties/README.md#تایپ-های-پایه-ای)
 
-[4.1 ) خصیصه ها](./classes-and-functions/README.md#روش-تعریف-کلاس)
+[6.2 ) خصیصه ها](./variables-and-properties/README.md#متغیر-ها)
+
+[6.3 ) خصیصه ها](./variables-and-properties/README.md#خصیصه-ها)
 
 
 
