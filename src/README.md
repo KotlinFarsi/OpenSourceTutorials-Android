@@ -52,7 +52,7 @@
 
 [6.1 ) type های پایه ای](./variables-and-properties/README.md#تایپ-های-پایه-ای)
 
-[6.2 ) خصیصه ها](./variables-and-properties/README.md#متغیر-ها)
+[6.2 ) متغیر ها](./variables-and-properties/README.md#متغیر-ها)
 
 [6.3 ) خصیصه ها](./variables-and-properties/README.md#خصیصه-ها)
 
