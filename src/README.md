@@ -56,6 +56,18 @@
 
 [6.3 ) خصیصه ها](./variables-and-properties/README.md#خصیصه-ها)
 
+**[7 - Anko و توابع الحاقی](./anko-and-extension-functions/README.md)**
+
+[7.1 ) Anko چیست؟](./anko-and-extension-functions/README.md)
+
+[7.2 ) شروع به استفاده از Anko](./anko-and-extension-functions/README.md)
+
+[7.3 ) توابع الحاقی](./anko-and-extension-functions/README.md)
+
+
+
+
+
 
 
 
