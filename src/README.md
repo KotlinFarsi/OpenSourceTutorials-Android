@@ -66,9 +66,9 @@
 
 **[8 - بدست آوردن دیتا با استفاده از API](./retrieving-data-from-api/README.md)**
 
-[8.1 ) انجام درخواست](./retrieving-data-from-api/README.md)
+[8.1 ) انجام درخواست](./retrieving-data-from-api/README.md#انجام-درخواست)
 
-[8.2 ) انجام درخواست خارج از نخ اصلی](./retrieving-data-from-api/README.md)
+[8.2 ) انجام درخواست خارج از نخ اصلی](./retrieving-data-from-api/README.md#انجام-درخواست-خارج-از-نخ-اصلی)
 
 
 
