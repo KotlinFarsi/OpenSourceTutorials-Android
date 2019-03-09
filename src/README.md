@@ -72,11 +72,11 @@
 
 **[9 - کلاس های دیتا](./data-classes/README.md)**
 
-[9.1 ) توابع اضافی](./data-classes/README.md)
+[9.1 ) توابع اضافی](./data-classes/README.md#توابع-اضافی)
 
-[9.2 ) کپی کردن کلاس دیتا](./data-classes/README.md)
+[9.2 ) کپی کردن کلاس دیتا](./data-classes/README.md#کپی-کردن-یک-کلاس-دیتا)
 
-[9.3 ) مپ کردن یک آبجکت به متغیرها](./data-classes/README.md)
+[9.3 ) مپ کردن یک آبجکت به متغیرها](./data-classes/README.md#مپ-کردن-یک-شی-به-متغیرها)
 
 
 
