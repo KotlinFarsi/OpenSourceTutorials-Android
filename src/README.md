@@ -70,6 +70,16 @@
 
 [8.2 ) انجام درخواست خارج از نخ اصلی](./retrieving-data-from-api/README.md#انجام-درخواست-خارج-از-نخ-اصلی)
 
+**[9 - کلاس های دیتا](./data-classes/README.md)**
+
+[9.1 ) توابع اضافی](./data-classes/README.md)
+
+[9.2 ) کپی کردن کلاس دیتا](./data-classes/README.md)
+
+[9.3 ) مپ کردن یک آبجکت به متغیرها](./data-classes/README.md)
+
+
+
 
 
 
