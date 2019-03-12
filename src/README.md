@@ -80,6 +80,9 @@
 
 **[10 - تجزیه دیتا](./parsing-data/README.md)**
 
+[10.1 ) شکل دادن به لایه ی domain](./parsing-data/README.md)
+
+
 
 
 

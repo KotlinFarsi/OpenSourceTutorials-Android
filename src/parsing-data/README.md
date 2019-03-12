@@ -68,6 +68,100 @@ class ForecastRequest(val zipCode: String) {
 compile "com.google.code.gson:gson:2.4"
 ```
 
+<div dir="rtl">
+
+## شکل دادن به لایه ی `domain`
+
+حالا نوبت ساختن پکیج نمایش دهنده ی لایه ی `domain` هه که شامل چند `command` هه! ولی برای شروع اول باید `command` رو تعریف کنیم.
+
+</div>
+
+```kotlin
+public interface Command<T> {
+    fun execute(): T
+}
+```
+
+<div dir="rtl">
+
+این دستورات (`command`) یک فعالیت رو اجرا میکنن و یک آبجکت رو که جنس کلاسش به صورت `generic type` مشخص شده رو برمیگردونن. یکی از ویژگی های جالب اینه که هر تابعی در کاتلین یک مقدار برمیگردونه! به صورت پیشفرض، اگر جنس مقداری که برگردانده خواهد شد مشخص نبود، یک آبجکت از جنس کلاس `Unit` رو برمیگدونه. بنابراین اگر میخوایم که `command` مون چیزی برنگردونه، میتونیم جنسش رو `Unit` نیز معرفی کنیم.
+
+`Interface` ها در کاتلین، قدرتمند تر از جاوا هستند چون میتونن شامل کد هم بشن ولی برای فعلا ما کاری به این ویژگی نداریم. در فصل های آینده بیشتر در مورد این موضوع توضیح خواهیم داد.
+
+در دستور اول، نیازه که اول پیشبینی رو از API درخواست کنیم و بعد به کلاس `domain` تبدیل کنیمش. کد کلاس های `domain` رو در زیر ببینیم :
+
+
+</div>
+
+```kotlin
+data class ForecastList(val city: String, val country: String,
+                        val dailyForecast:List<Forecast>)
+data class Forecast(val date: String, val description: String, val high: Int,
+                    val low: Int)
+```
+
+<div dir="rtl">
+
+حالا احتمالا این کلاس ها رو بعدا وقتی ویژگی های دیگه ای اضافه شد، بازدید میکنیم ولی فعلا برای دیتایی که میخوایم نگه داریم کافیه.
+
+کلاس ها باید از `data` به مدل `domain` مپ بشن، بنابراین فعالیت بعدی ساخت `DataMapper` اهه.
+
+
+</div>
+
+```kotlin
+public class ForecastDataMapper {
+
+    fun convertFromDataModel(forecast: ForecastResult): ForecastList {
+        return ForecastList(forecast.city.name, forecast.city.country,
+                convertForecastListToDomain(forecast.list))
+    }
+    
+    private fun convertForecastListToDomain(list: List<Forecast>):
+            List<ModelForecast> {
+        return list.map { convertForecastItemToDomain(it) }
+    }
+    
+    private fun convertForecastItemToDomain(forecast: Forecast): ModelForecast {
+        return ModelForecast(convertDate(forecast.dt),
+                forecast.weather[0].description, forecast.temp.max.toInt(),
+                forecast.temp.min.toInt())
+    }
+    
+    private fun convertDate(date: Long): String {
+        val df = DateFormat.getDateInstance(DateFormat.MEDIUM,
+                Locale.getDefault())
+        return df.format(date * 1000)
+    }
+}
+```
+
+<div dir="rtl">
+
+در این حین که داریم از دو کلاس با نام های یکسان استفاده میکنیم، باید به یکی، نام مشخص و مجزایی بدیم تا نیازی به نوشتن نام کامل پکیج نداشته باشیم
+
+</div>
+
+```kotlin
+import com.antonioleiva.weatherapp.domain.model.Forecast as ModelForecast
+```
+
+<div dir="rtl">
+
+یکی از بخش های جالب این کد، نحوه ی تبدیل لیست پیشبینی، از `data` به مدل `domain` است.
+
+</div>
+
+```kotlin
+return list.map { convertForecastItemToDomain(it) }
+```
+
+
+<div dir="rtl">
+
+در یک خط، ما میتونیم بر روی یک collection حلقه ای رو تکرار کنیم و یک لیست جدید با ایتم های کانورت شده برگردونیم. کاتلین یک سری از توابع اعمالی خوبی بر روی لیست ها مهیا کرده که یک عمل را بر روی تمامی ایتم های لیست اجرا میکند و به نحو دلخواه انتقال میده! این یکی از قدرتمندترین ویژگی های کاتلین برای توسعه دهندگانی است که از java 7 استفاده میکردند. به زودی یک نگاهی به این توابع خواهیم انداخت. این مهمه که بدونیم آنها وجود دارن، زیرا که مواقع زیادی پیدا میشوند که استفاده از این توابع باعث صرفه جویی در زمان و خط های بیهوده میشود.
+
+</div>
 
 
 
