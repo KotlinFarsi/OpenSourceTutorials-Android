@@ -161,7 +161,72 @@ return list.map { convertForecastItemToDomain(it) }
 
 در یک خط، ما میتونیم بر روی یک collection حلقه ای رو تکرار کنیم و یک لیست جدید با ایتم های کانورت شده برگردونیم. کاتلین یک سری از توابع اعمالی خوبی بر روی لیست ها مهیا کرده که یک عمل را بر روی تمامی ایتم های لیست اجرا میکند و به نحو دلخواه انتقال میده! این یکی از قدرتمندترین ویژگی های کاتلین برای توسعه دهندگانی است که از java 7 استفاده میکردند. به زودی یک نگاهی به این توابع خواهیم انداخت. این مهمه که بدونیم آنها وجود دارن، زیرا که مواقع زیادی پیدا میشوند که استفاده از این توابع باعث صرفه جویی در زمان و خط های بیهوده میشود.
 
+و حالا همه چی برای نوشتن دستور مناسب است:
+
 </div>
 
+```kotlin
+class RequestForecastCommand(val zipCode: String) :
+        Command<ForecastList> {
+    override fun execute(): ForecastList {
+        val forecastRequest = ForecastRequest(zipCode)
+        return ForecastDataMapper().convertFromDataModel(
+            forecastRequest.execute())
+    }
+}
+```
+
+
+
+<div dir="rtl">
+
+## نمایش دیتا بر روی UI
+
+کد `MainActivity`  مقداری تغییر خواهد کرد، زیرا که ما حالا دیتای واقعی برای پر کردن آداپتور خواهیم داشت. برای این باید درخواست asynchronous امون رو دوباره بنویسیم
+
+</div>
+
+```kotlin
+async() {
+    val result = RequestForecastCommand("94043").execute()
+    uiThread {
+        forecastList.adapter = ForecastListAdapter(result)
+    }
+}
+```
+
+<div dir="rtl">
+
+آداپتور هم نیاز به مقداری تغییر دارد
+
+</div>
+
+```kotlin
+class ForecastListAdapter(val weekForecast: ForecastList) :
+        RecyclerView.Adapter<ForecastListAdapter.ViewHolder>() {
+        
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):
+            ViewHolder? {
+    return ViewHolder(TextView(parent.getContext()))
+}
+
+    override fun onBindViewHolder(holder: ViewHolder,
+            position: Int) {
+        with(weekForecast.dailyForecast[position]) {
+            holder.textView.text = "$date - $description - $high/$low"
+        }
+    }
+    
+    override fun getItemCount(): Int = weekForecast.dailyForecast.size
+
+    class ViewHolder(val textView: TextView) : RecyclerView.ViewHolder(textView)
+}
+```
+
+<div dir="rtl">
+
+* **تابع with:** یکی از توابع سودمندی که در کتابخانه استاندارد کاتلین اضافه شده است، تابع with است. به صورت خیلی ساده، این تابع یک آبجکت و یک تابع الحاقی رو به صورت پارامترهای ورودی دریافت میکند و آبجکت، آن تابع را اجرا خواهد کرد. این به این معنی است که تمام کدهایی که داخل براکت ها نوشته میشوند به صورت تابع الحاقی بر روی آن ابجکتی که به عنوان پارامتر اول دادیم، اجرا خواهند شد.
+
+</div>
 
 
