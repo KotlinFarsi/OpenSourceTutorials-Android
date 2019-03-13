@@ -80,7 +80,12 @@
 
 **[10 - تجزیه دیتا](./parsing-data/README.md)**
 
-[10.1 ) شکل دادن به لایه ی domain](./parsing-data/README.md)
+[10.1 ) تبدیل JSON به کلاس های دیتا](./parsing-data/README.md#تبدیل-json-به-کلاس-های-دیتا)
+
+[10.2 ) شکل دادن به لایه ی domain](./parsing-data/README.md#شکل-دادن-به-لایه-ی-domain)
+
+[10.3 ) نمایش دیتا بر روی UI](./parsing-data/README.md#نمایش-دیتا-بر-روی-ui)
+
 
 
 
