@@ -88,11 +88,11 @@
 
 **[11 - Overloading Operators](./operators-overloading/README.md)**
 
-[10.1 ) جدول اوپراتور ها](./operators-overloading/README.md#جدول-اوپراتور-ها)
+[11.1 ) جدول اوپراتور ها](./operators-overloading/README.md#جدول-اوپراتور-ها)
 
-[10.2 ) یک مثال](./operators-overloading/README.md#یک-مثال)
+[11.2 ) یک مثال](./operators-overloading/README.md#یک-مثال)
 
-[10.3 ) عملگرها در توابع الحاقی](./operators-overloading/README.md#عملگرها-در-توابع-الحاقی)
+[11.3 ) عملگرها در توابع الحاقی](./operators-overloading/README.md#عملگرها-در-توابع-الحاقی)
 
 
 
