@@ -80,4 +80,58 @@ operator fun equals(other: Any?): Boolean
 |`a(i, j)`              |`a.invoke(i, j)`                    |
 |`a(i_1, …, i_n)`       |`a.invoke(i_1,..., i_n)`            |
 
+### یک مثال
+
+<div dir="rtl">
+
+همانطور که تصور میکنید لیست های کاتلینی عملگرهای array-like ای به مانند بالا که گفته شده را دارا میباشد که در نتیجه به مانند جاوا میتونیم به آیتم های یک لیست دسترسی داشته باشیم ولی این تنها به این محدود نمیشود و در لیست های mutable (تغییرپذیر)، هر آیتم میتونه به صورت مستقیم مقدار دهی بشه.
+
+</div>
+
+```kotlin
+val x = myList[2]
+myList[2] = 4
+```
+
+<div dir="rtl">
+
+اگر به یاد داشته باشید، کلاس دیتایی به نام `ForecastList` داشتیم که تشکیل شده از یک لیست با مقداری اطلاعات اضافی بود. اگه به جای این که درخواستی به لیست های داخلی برای بدست آوردن یک آیتم از اون بکنیم، به آیتم ها مستقیما دسترسی داشته باشیم، جالب تر خواهد بود. در ضمن، یک تابع به نام `size()` رو هم پیاده سازی میکنیم که آداپتور فعلی را ساده تر خواهد کرد.
+
+</div>
+
+```kotlin
+data class ForecastList(val city: String, val country: String,
+                        val dailyForecast: List<Forecast>) {
+    operator fun get(position: Int): Forecast = dailyForecast[position]
+    fun size(): Int = dailyForecast.size
+}
+```
+
+<div dir="rtl">
+
+که این `onBindViewHolder` امون رو رو مقداری ساده تر خواهد کرد.
+
+</div>
+
+```kotlin
+override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    with(weekForecast[position]) {
+        holder.textView.text = "$date - $description - $high/$low"
+    }
+}
+```
+
+<div dir="rtl">
+
+همچنین `getItemCount()` نیز:
+
+</div>
+
+```kotlin
+override fun getItemCount(): Int = weekForecast.size()
+```
+
+
+
+
 
