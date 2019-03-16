@@ -86,7 +86,7 @@
 
 [10.3 ) نمایش دیتا بر روی UI](./parsing-data/README.md#نمایش-دیتا-بر-روی-ui)
 
-**[11 - تجزیه دیتا](./operators-overloading/README.md)**
+**[11 - Overloading Operators](./operators-overloading/README.md)**
 
 
 <بقیه فصل ها در حال ترجمه است>
