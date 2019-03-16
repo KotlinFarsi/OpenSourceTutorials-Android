@@ -130,6 +130,31 @@ override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 ```kotlin
 override fun getItemCount(): Int = weekForecast.size()
 ```
+<div dir="rtl">
+
+### عملگرها در توابع الحاقی
+
+لازم نیست که به کلاس های خودمون بسنده کنیم و میتونیم کلاس هامون رو با استفاده از توابع الحاقی گسترش بدیم. به عنوان مثال میتونیم مثل روش دستیابی به لیست ها، به `ViewGroup` هامون هم دستیابی داشته باشیم:
+
+</div>
+
+```kotlin
+operator fun ViewGroup.get(position: Int): View
+        = getChildAt(position)
+```
+
+<div dir="rtl">
+
+حالا میتونیم خیلی ساده `View` مورد نظر رو از `ViewGroup` با استفاده از `position` به دست بیاریم.
+
+</div>
+
+```kotlin
+val container: ViewGroup = find(R.id.container)
+val view = container[2]
+```
+
+
 
 
 
