@@ -94,6 +94,10 @@
 
 [11.3 ) عملگرها در توابع الحاقی](./operators-overloading/README.md#عملگرها-در-توابع-الحاقی)
 
+**[12 - تجزیه دیتا](./making-the-forecast-list-clickable/README.md)**
+
+
+
 
 
 <بقیه فصل ها در حال ترجمه است>
